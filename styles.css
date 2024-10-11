@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --font-spacing-size: 8px;
+}
+
+#root {
+  padding: calc(var(--font-spacing-size) * 2);
+}
+
+.cities-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 calc(var(--font-spacing-size) * 8);
+}
+
+button {
+  border: none;
+  margin: var(--font-spacing-size);
+  outline: none;
+  font-size: calc(var(--font-spacing-size) * 2);
+  color: darkgray;
+  cursor: pointer;
+  background-color: white;
+}
+
+button:hover {
+  color: cornflowerblue;
+}
+
+.selected,
+.selected:hover {
+  color: black;
+  cursor: auto;
+}
+
+.slider {
+  height: 1px;
+  border-bottom: 1px solid lightgray;
+}
+
+.slider-underline {
+  height: 1px;
+  position: relative;
+  border-bottom: 1px solid black;
+  transition: all 0.5s;
+}
+
+.time-display {
+  font-family: Arial;
+  font-size: calc(var(--font-spacing-size) * 4);
+  display: flex;
+  justify-content: center;
+  margin-top: calc(var(--font-spacing-size) * 4);
+}
